@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.1fr 0.3fr 1.6fr;
+    gap: 1px 1px;
+    grid-template-areas: "header header header header" "section section section section" "container container container container";
+    
+  }
+  /* HEADER */
+
+  .header { 
+      grid-area: header; 
+      background-color: gray;
+      height: 240px;
+      text-align: center;
+      color: whitesmoke;
+}
+#unutrasnjidivhedera{
+    margin-top: 30px;
+}
+
+
+#title{
+    font-size: 1.4em;
+    color: whitesmoke;
+    font-weight: 400;
+}
+#sum {
+    font-size: 3em;
+    color: whitesmoke;
+    font-weight: 330;
+}
+p#income {
+    font-size: 1em;
+    max-width: 350px;
+    height: 40px;
+    background-color: rgb(40,185,180);
+    margin-left: 590px;
+    padding-left: 7px;
+}
+#income {
+    text-align: left;
+    padding-top: 7px;
+}
+
+p#expense {
+    font-size: 1em;
+    max-width: 350px;
+    height: 40px;
+    background-color: rgb(254,81,74);
+    margin-left: 590px;
+    padding-left: 7px;
+
+}
+
+#expense {
+    text-align: left;
+    padding-top: 7px;
+}
+
+
+  /* SECTION */
+  .section { 
+      grid-area: section; 
+      background-color: lightgray;
+      height: 70px;
+
+    }
+    #form{
+        padding-top: 12px;
+        text-align: center;
+    }
+    #select {
+        width: 90px;
+        height: 49px;
+        font-weight: 500;
+    }
+    
+    
+    input {
+        width: 230px;
+        height: 45px;
+    }
+    
+    #button-add {
+        width: 80px;
+        height: 49px;
+    }
+
+    #opis-transakcije{
+        font-weight: 400;
+        padding-left: 5px;
+    }
+
+    #iznos-transakcije{
+        font-weight: 400;
+        padding-left: 5px;
+    }
+    /* OUTPUT */
+
+    .container { 
+        grid-area: container; 
+  
+      }
+
+    #autput{
+        margin-top: 10px;
+        display: flex;
+    }
+
+
+    #autput-inkam{
+        width: 49.8%;
+        margin-left: 20px;
+        
+        /* flex: 1 0 0; */
+        display: inline-block;
+     }
+    
+    
+    #autput-ekspense {
+        width: 49.8%;
+        margin-left: 20px;
+
+        /* flex: 1 0 0; */
+        display: inline-block;
+     } 
+
+    #h3-prihodi {
+        border-bottom: 1px solid rgb(206, 202, 202);
+        color: rgb(40,185,180);
+        font-weight: 450;
+        font-size: 1.5em;
+        margin-left: 40px;
+        display: inline;
+     }
+    
+    
+    #h3-rashodi {
+        border-bottom: 1px solid rgb(206, 202, 202);
+        color: rgb(254,81,74);
+        font-weight: 450;
+        font-size: 1.5em;
+        margin-left: 40px;
+        margin-right: 40px;
+
+     }
+     /* outputDiv:hover + .btn, .btn:hover {
+        display: inline-block;
+    } */
+
+    .btn {
+        display: none;
+      }
+    .hov:hover .btn {
+        display: inline;
+      }
+     
+
+  
+  

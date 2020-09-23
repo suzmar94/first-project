@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- HEADER -->
+        <div class="header">
+            <div id="unutrasnjidivhedera">
+                <h1 id="title">Dostupan budzet u Avgustu 2020:</h1>
+                <p id="sum">0.00</p>
+                <p id="income">PRIHOD:
+                    <span id="income-number"></span>
+                </p>
+                <br>
+                <p id="expense">RASHOD:
+                    <span id="expense-number"></span>
+                    <span id="percent"></span>
+                </p>
+            </div>
+        </div>
+        
+        <!-- SELECTION PART -->
+
+        <div class="section">
+            <form id="form">
+                <select name="izaberi" id="select">
+                    <option disabled selected value>-</option>
+                    <option value="Prihod">PRIHOD</option>
+                    <option value="Rashod">RASHOD</option>
+                </select>
+                <input type="text" id="opis-transakcije" placeholder="Opis">
+                <input type="number" id="iznos-transakcije" placeholder="Iznos">
+                <button id="button-add">Potvrdi</button>
+            </form>
+        </div>
+        <!-- OUTPUT PART -->
+
+        <div class="container">
+            <section id="autput">
+                <div id="autput-inkam">
+                    <h3 id="h3-prihodi">PRIHODI</h3>
+                    <div id="income-container"></div>
+                </div>
+                <div id="autput-ekspense">
+                    <h3 id="h3-rashodi">RASHODI</h3>
+                    <div id="expenses-container"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
